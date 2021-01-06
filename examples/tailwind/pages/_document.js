@@ -31,6 +31,10 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          {/* Potentially fixes the issue */}
+          {/* <script
+            dangerouslySetInnerHTML={{ __html: 'console.log("hello")' }}
+          /> */}
         </body>
       </Html>
     );
