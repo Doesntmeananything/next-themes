@@ -3,9 +3,7 @@ import { useTheme } from "next-themes";
 export default function IndexPage() {
   const { theme, setTheme } = useTheme();
   return (
-    // This wrapper helps fix the issue by applying background styles lower in the DOM tree
-    // <div className="bg-white dark:bg-black">
-    <div className="flex flex-col items-center justify-center py-20">
+    <div className="flex flex-col items-center justify-center h-screen py-20 text-white transition-colors duration-300 ease-out bg-white dark:bg-black dark:text-black">
       <h1 className="text-5xl font-bold text-center text-gray-800 dark:text-gray-100 font-heading">
         Next Themes + Tailwind Dark Mode
       </h1>
@@ -19,6 +17,5 @@ export default function IndexPage() {
         Change Theme
       </button>
     </div>
-    // </div>
   );
 }
